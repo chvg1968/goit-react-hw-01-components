@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
-export const TitleTask = styled.h1`
+export const TitleTask1 = styled.h1`
   text-align: center;
   color: gray; 
 `;
 
 export const ProfileContent = styled.div`
-   position: absolute;  
-   margin: 40px 850px;
+   position: absolute; 
+   left: 50%; 
+   transform: translate(-50%);
    padding: 100px;  
    width:100 px; 
    height: auto; 
@@ -64,19 +65,19 @@ export const ProfileStats = styled.ul`
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto; 
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     background-color: #f3f6f9; 
     width: 100%;
     height: auto;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     text-align: center;
 `;
 
 export const ListStats = styled.li`  
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align:center; 
     border-right: solid 1px #e4e9f0;

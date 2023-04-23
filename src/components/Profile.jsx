@@ -5,7 +5,7 @@ function Profile() {
   return (
     <ProfileContent>
       {users.map((user, index) => (
-      <ProfileBox>
+      <ProfileBox key={index}>
         <ProfileCard key={index}>
           <ProfileImage src={user.avatar} alt="avatar" className="avatar"/>
           <ProfileName>{user.username}</ProfileName>
