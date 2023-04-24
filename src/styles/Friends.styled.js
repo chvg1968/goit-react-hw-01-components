@@ -26,17 +26,17 @@ export const Card = styled.li`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-radius: 10px;
-  border: 2px solid #ccc;
+  border-radius: 5px;
+  
   padding: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `;
 
 export const CardAvatar = styled.img`
     position: relative; 
     margin-left: -4%;
-    width: 200 px;
-    height: 200 px;
+    width: 300 px;
+    height: 300 px;
     border-radius: 5px
     border: solid 1px red; 
     
@@ -51,7 +51,8 @@ export const CardStatus = styled.span`
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: -2%;
+    margin-right: 5%
 `;
 
 
@@ -63,10 +64,3 @@ export const CardName = styled.p`
     font-size: 24px; 
 `;
 
-export const CardIconOn = styled.span`
-    background-color: green;
-`;
-
-export const CardIconOff = styled.span`
-    background-color: red;
-`;
