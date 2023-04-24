@@ -15,7 +15,7 @@
   function Statistics() {
     return (
       <>
-          <StatsBox key={0}>
+          <StatsBox >
               <StatsTitle>UPLOAD STATS</StatsTitle>
 
               <StatsList>

@@ -12,9 +12,9 @@ function Transactions() {
                 <TH>Currency</TH>
             </tr>
         </THead>
-        { movs.map((mov) => (
-        <TBody key={mov.id}>
-            <TR>
+        { movs.map((mov, index) => (
+        <TBody key={index}>
+            <TR >
                 <TD>{mov.type}</TD>
                 <TD>{mov.amount}</TD>
                 <TD>{mov.currency}</TD>

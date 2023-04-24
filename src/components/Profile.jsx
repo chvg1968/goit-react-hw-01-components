@@ -6,7 +6,7 @@ function Profile() {
     <ProfileContent>
       {users.map((user, index) => (
       <ProfileBox key={index}>
-        <ProfileCard key={index}>
+        <ProfileCard >
           <ProfileImage src={user.avatar} alt="avatar" className="avatar"/>
           <ProfileName>{user.username}</ProfileName>
           <ProfileName>@{user.tag}</ProfileName>
