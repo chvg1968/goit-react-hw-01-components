@@ -35,10 +35,10 @@ export const Card = styled.li`
 export const CardAvatar = styled.img`
     position: relative; 
     margin-left: -4%;
-    width: 300 px;
-    height: 300 px;
     border-radius: 5px
     border: solid 1px red; 
+    width: 100px;
+    height: 100px;
     
 `;
 

@@ -12,7 +12,7 @@ function Friends (){
                 <span><CardStatus style={{ backgroundColor: 'green' }} /></span> 
                 : 
                 <span><CardStatus style={{ backgroundColor: 'red' }}/></span>}</CardStatus>
-                <CardAvatar src={friend.avatar} alt="User avatar" width="48" />
+                <CardAvatar src={friend.avatar} alt="User avatar"  />
                 <CardName>{friend.name}</CardName>
             </Card>
             ))}
