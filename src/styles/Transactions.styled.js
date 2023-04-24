@@ -12,7 +12,7 @@ export const Table = styled.table`
   left: 50%; 
   transform: translate(-50%);
   border-collapse: collapse;
-//   border-radius: 5px;
+  border-radius: 5px;
   width: 700px; 
   margin: 20px;
   font-size: 1rem;
