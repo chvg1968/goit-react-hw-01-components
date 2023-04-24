@@ -36,7 +36,6 @@ export const CardAvatar = styled.img`
     position: relative; 
     margin-left: -4%;
     border-radius: 5px
-    border: solid 1px red; 
     width: 100px;
     height: 100px;
     
