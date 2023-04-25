@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table, THead, TBody, TR, TH, TD  } from '../styles/Transactions.styled.js';
+import PropTypes from 'prop-types';
 const movs = require ('./transactions.json');
 
 function Transactions() {
@@ -25,5 +26,13 @@ function Transactions() {
     </Table>
 )
 }
+
+Transactions.propTypes = {
+    movs: PropTypes.arrayOf(PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired
+    })).isRequired
+  };
 
 export default Transactions;

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Card, CardAvatar, CardStatus, CardName  } from '../styles/Friends.styled'
+import { Container, Card, CardAvatar, CardStatus, CardName  } from '../styles/Friends.styled';
+import PropTypes from 'prop-types';
 const friends =  require ('./friends.json') ;
 
 
@@ -19,5 +20,17 @@ function Friends (){
         </Container>
     )
 }
+
+Friends.propTypes = {
+    friends: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        avatar: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+      }).isRequired
+    ).isRequired,
+  };
+  
 
 export default Friends;
