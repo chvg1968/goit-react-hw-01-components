@@ -14,7 +14,7 @@ function Transactions() {
         </THead>
         { movs.map((mov, index) => (
         <TBody key={index}>
-            <TR >
+            <TR key={0}>
                 <TD>{mov.type}</TD>
                 <TD>{mov.amount}</TD>
                 <TD>{mov.currency}</TD>

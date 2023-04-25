@@ -27,7 +27,7 @@ export const THead = styled.thead`
 `;
 
 export const TBody = styled.tbody`
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background-color: #ecf1f4;
   }
 `;
